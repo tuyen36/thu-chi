@@ -157,7 +157,7 @@ public class DebtActivity extends AppCompatActivity {
             TextView a = new TextView(DebtActivity.this);
             a.setTextColor(0xFFFFFFFF);
             a.setTextSize(15);
-            a.setTextStyle(android.graphics.Typeface.BOLD);
+            a.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
             TextView b = new TextView(DebtActivity.this);
             b.setTextColor(0xFF8B949E);
             b.setTextSize(12);

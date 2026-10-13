@@ -134,7 +134,7 @@ public class HistoryActivity extends AppCompatActivity {
                     0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f);
             TextView amt = new TextView(HistoryActivity.this);
             amt.setTextSize(14);
-            amt.setTextStyle(android.graphics.Typeface.BOLD);
+            amt.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
             row.addView(name, lp);
             row.addView(amt);
             return new H1(row, name, amt);
