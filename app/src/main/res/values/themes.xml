@@ -1,0 +1,19 @@
+<resources>
+    <style name="Theme.ThuChi" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#1F6FEB</item>
+        <item name="colorPrimaryDark">#0D419D</item>
+        <item name="colorAccent">#1F6FEB</item>
+        <item name="android:windowBackground">#0D1117</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#8B949E</item>
+        <item name="alertDialogTheme">@style/Theme.ThuChi.Dialog</item>
+    </style>
+
+    <style name="Theme.ThuChi.Dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">#1F6FEB</item>
+        <item name="colorAccent">#1F6FEB</item>
+        <item name="android:windowBackground">#161B22</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#8B949E</item>
+    </style>
+</resources>
