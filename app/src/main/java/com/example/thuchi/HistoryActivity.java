@@ -162,16 +162,17 @@ public class HistoryActivity extends AppCompatActivity {
             }
             H1 hh = (H1) h;
             ThuChiDao d = AppDb.get(HistoryActivity.this).dao();
-            String cat = "?";
+            String catName = "?";
             String wal = "";
             try {
                 Category cc = d.catById(r.t.categoryId);
-                if (cc != null) cat = cc.name;
+                if (cc != null) catName = cc.name;
             } catch (Exception ignored) {}
             try {
                 Wallet w = d.walletById(r.t.walletId);
                 if (w != null) wal = " • " + w.name;
             } catch (Exception ignored) {}
+            final String cat = catName;
             String note = r.t.note.isEmpty() ? "" : " — " + r.t.note;
             hh.name.setText(cat + wal + note);
             hh.amt.setText((r.t.type == 1 ? "+" : "-") + Money.vnd(r.t.amount));
